@@ -1,51 +1,88 @@
-#Ejercicio 1
-#lista=list(range(4,100,4))
-#print(lista)
+#Ejrcicio 1
+#def imprimir_hola_mundo():
+#    print ("Hola Mundo!")
+
+#imprimir_hola_mundo()
 
 #Ejercicio 2
-#lista=[1,2,3,4,5]
-#print(lista[-2])
+#def saludar_usuario(nombre):
+#    print(f"Hola {nombre}!")
+
+#nombre=input("Cual es tu nombre? \n")
+#saludar_usuario(nombre)
 
 #Ejercicio 3
-#lista=[]
-#lista.append("Messi")
-#lista.append("Churrasco")
-#lista.append("Casa")
-#print(lista)
+#def  informacion_personal(nombre, apellido,edad, residencia):
+#    print(f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}")
+
+#a=input("Cual es su nombre? \n")
+#b=input("Cual es su apellido? \n")
+#c=input("Cual es su edad? \n")
+#d=input("Donde vive? \n")
+#informacion_personal(a,b,c,d)
 
 #Ejercicio 4
-#animales = ["perro", "gato", "conejo", "pez"]
-#animales[-1]="oso"
-#animales[-2]="loro"
-#print(animales)
+#def calcular_perimetro_circulo(radio):
+#    print (f"El perimetro del circulo es {2*3.14**radio}")
+#def calcular_area_circulo(radio):
+#    print (f"El area del circulo es {3.14*radio**2}")
+
+#a=int(input("Cual es el radio del circulo?"))
+#calcular_area_circulo(a)
+#calcular_perimetro_circulo(a)
 
 #Ejercicio 5
-#El codigo se encarga de buscar el numero mas alto dentro de la lista, y una vez encontrado se remueve de la misma.
+#def segundos_a_horas(segundos):
+#    print(f"estos {segundos} segundos equivalen a {segundos/3600} horas")
+#
+#a=int(input("Ingrese la cantidad de segundos. \n"))
+#segundos_a_horas(a)
 
 #Ejercicio 6
-#lista=list(range(10,30,5))
-#print(lista[0],lista[1])
+#def tabla_multiplicar(numero):
+#    mult=0
+#    while mult < 11:
+#        print(f"{mult} x {numero} = {mult*numero}")
+#        mult=mult+1
+
+#a=int(input("Ingrese un numero \n"))
+#tabla_multiplicar(a)
 
 #Ejercicio 7
-#autos=["sedan", "polo", "suran", "gol"]
-#autos[1]="Moto"
-#autos[2]="Camion"
-#print(autos)
+#def operaciones_basicas(a, b):
+#    suma= a+b
+#    resta= a-b
+#    mult= a*b
+#    div= a/b
+#    return (suma,resta,mult,div)
+
+#a=(int(input("Ingrese el primer valor \n")))
+#b=(int(input("Ingrese el segundo valor \n")))
+
+#print(f"El resultado de la suma, resta, multiplicacion y divicion es: {operaciones_basicas(a,b)}") 
 
 #Ejercicio 8
-#dobles=[]
-#dobles.append(5*2)
-#dobles.append(10*2)
-#dobles.append(15*2)
-#print(dobles)
+#def calcular_imc(peso, altura):
+#    return (peso/altura**2)
+
+#a=(float(input("Ingrese su peso kilos (ej: 85.6): \n")))
+#b=(float(input("Ingrese su altura en metros (ej: 1.86): \n")))
+
+#print(f"Su IMC es de {calcular_imc(a,b)}")
 
 #Ejercicio 9
-#compras = [["pan", "leche"], ["arroz", "fideos", "salsa"],["agua"]]
-#compras[2].append("jugo")
-#compras[1][1]="tallarines"
-#compras[0].remove("pan")
-#print(compras)
+#def celsius_a_fahrenheit(celsius):
+#    return ((celsius*9/5)+32)
+
+#a=(float(input("Ingrese la temperatura en Celcius \n")))
+#print(f"{a} celcius equivale a {celsius_a_fahrenheit(a)} fahrenheit")
 
 #Ejercicio 10
-#lista_anidada=[15,[True],[25.5,57.9,30.6],[False]]
-#print(lista_anidada)
+#def calcular_promedio(a, b, c):
+#    return((a+b+c)/3)
+
+#a=int(input("Ingrese el primer numero. \n"))
+#b=int(input("Ingrese el segundo numero. \n"))
+#c=int(input("Ingrese el tercer numero. \n"))
+
+#print(f"El promedio de los tres numeros es {calcular_promedio(a,b,c)}")
